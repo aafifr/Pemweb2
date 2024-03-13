@@ -51,3 +51,4 @@ echo "<br/>Status: $status";
 echo "<br/>Nilai Total: $nilai_total";
 echo "<br/>Grade: $grade";
 echo "<br/>Prediket: $prediket";
+      
