@@ -4,7 +4,7 @@ $nim = $_POST['nim'];
 $nama = $_POST['nama'];
 $kelamin = $_POST['kelamin'];
 $prodi = $_POST['prodi'];
-$skills = $_POST['skills'];
+$skills = $_POST['skills'] ?? [];
 $domisili = $_POST['domisili'];
 $email = $_POST['email'];
 
@@ -27,7 +27,7 @@ foreach ($skills as $value) {
 
 // hitung kategori skill
 function skor_skill($skor_skill){
-    if ($skor_skill >= 0 && $skor_skill <= 40){
+    if ($skor_skill >= 1 && $skor_skill <= 40){
         return "Kurang";
       } 
     elseif ($skor_skill >= 41 && $skor_skill <= 60){
