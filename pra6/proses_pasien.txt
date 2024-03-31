@@ -1,0 +1,28 @@
+<?php
+// sertakan pustaka program koneksi 
+require_once 'dbkoneksi.php';
+// tangkap data dari form 
+$_kode = $_POST['kode']; // 1
+$_nama= $_POST['name']; // 2
+$_tmp_lahir = $_POST['tmp_lahir']; // 3
+$_tgl_lahir = $_POST['tgl_lahir']; // 4
+$_gender = $_POST['gender']; // 5
+$_email = $_POST['email']; // 6 
+$_alamat = $_POST['alamat']; //7
+$_kelurahan = $_POST['kelurahan']; // 8
+// simpan data ke array
+$data = [$_kode, $_nama, $_tmp_lahir, $_tgl_lahir, $_gender, $_email, $_alamat, $_kelurahan];
+
+$_proses = $_POST['proses'];
+if($_proses == "Simpan") { // cek apakah menekan tombol simpan di form
+// defninsi query sql insert
+$sql = "INSERT INTO pasien (kode, nama, tmp_lahir, tgl_lahir, gender, email, alamat, kelurahan_id) 
+        VALUES(?,?, ?, ?, ?, ?, ?, ?)";
+// definisikan statement sql
+$stmt = $dbh->prepare($sql);
+// eksekusi statement sql
+$stmt->execute($data);
+}
+// redirect page ke halaman data_pasien.php 
+header('Location: data_pasien.php');
+?>
