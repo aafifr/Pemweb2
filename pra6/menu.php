@@ -15,8 +15,23 @@
                             </a>
 
                             <a class="nav-link" href="pasien.php">
-                                <div class="sb-nav-link-icon"><i class="fas fa-hospital"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-user-nurse"></i></div>
                                 Pasien
+                            </a>
+
+                            <a class="nav-link" href="unit_kerja.php">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-person-dots-from-line"></i></div>
+                                Unit Kerja
+                            </a>
+
+                            <a class="nav-link" href="periksa.php">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                                Periksa
+                            </a>
+
+                            <a class="nav-link" href="paramedik.php">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-hospital-user"></i></div>
+                                Paramedik
                             </a>
                         </div>
                     </div>

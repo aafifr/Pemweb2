@@ -7,7 +7,7 @@ include_once('menu.php');
     <h1 class="mt-4">Dashboard</h1>
 
     <br>
-    <h3>SELAMAT DATANG DI PHP</h3>
+    <h3>Selamat Datang di Halaman Admin</h3>
 </div>
 
 <?php
